@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>Gallows mobile</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="front">
+    <h1 class="front_title">Gallows - guess the word game and stay alive.</h1>
+    <button class="front_button">Start</button>
+  </div>
+
+
+  <div class="game">
+    <div class="header">
+      <i class="bx bxs-star">
+        <span class="stars"></span>
+      </i>
+
+      <div class="level">Level: <span id="numLevel">1</span></div>
+
+      <!-- <img class="btn-pause" src="/img/pause-button.png" alt="pause" /> -->
+      <i class='bx bx-menu'></i></box-icon>
+    </div>
+
+    <div class="title"></div>
+
+    <div class="screen">
+      <div class="cartoon">
+        <img class="cartoonImg" src="./img_hangman/img_08.png" alt="hangman" />
+      </div>
+    </div>
+
+    <div class="assumption" id="guess"></div>
+
+    <div id="nextLevel" class="nextLevel">
+      <img class="levelImg" src="/img/next-level-progress.jpg" alt="next level load">
+    </div>
+
+    <div id="level-end" class="level-end">
+      <p class="gameOver">Game Over</p>
+      <div class="endGame">
+        <button class="btn exit">Exit ?</button>
+        <button class="btn repeat">Repeat ?</button>
+      </div>
+      <!-- <img class="levelImg" src="/img/next-level-progress.jpg" alt="next level load" > -->
+    </div>
+
+    <div id="language" class="language">
+      <p class="">Смените язык</p>
+    </div>
+
+  <div class="menu">
+    <div class="gameMenu">
+      <div id="close"></div>
+      <div class="infoMenu">
+        <p>Level:<span>5</span></p>
+        <p>Level:<span>5</span></p>
+        <p>Level:<span>5</span></p>
+
+      </div>
+      <div class="buttonsMenu">
+        <button class="btn exit">Exit ?</button>
+        <button class="btn repeat">Repeat ?</button>
+
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script type="module" src="./base.js"></script>
+<script type="module" src="./script.js"></script>
+<script src="./renderer.js"></script>
+
+</html>
